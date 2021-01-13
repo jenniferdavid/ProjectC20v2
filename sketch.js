@@ -40,7 +40,7 @@ function draw() {
     background(255);
     //Write condition here to evalute if tom and jerry collide
 
-    if((tomCat.x - jerryMouse.x) < (tomCat.width - jerryMouse.width)/2 -166){
+    if((tomCat.x - jerryMouse.x) < (tomCat.width/2 + jerryMouse.width/2) - tomCat.width){
         tomCat.velocityX = 0;
         tomCat.addAnimation("catStop",catImg3);
         tomCat.changeAnimation("catStop");
