@@ -22,13 +22,17 @@ function setup(){
     garden = createSprite(500,400,1000,800);
     garden.addImage(gardenImg);
 
-    tomCat = createSprite(700,650,10,10);
+    tomCat = createSprite(870,600,10,10);
     tomCat.addImage(catImg1);
     tomCat.scale = 0.1;
+    tomCat.debug=true;
+    tomCat.setCollider("circle",0,0,200);
 
-    jerryMouse = createSprite(200,630,10,10);
+    jerryMouse = createSprite(200,600,10,10);
     jerryMouse.addImage(mouseImg1);
     jerryMouse.scale = 0.1;
+    jerryMouse.debug=true;
+    jerryMouse.setCollider("circle",0,0,200);
 }
 
 function draw() {
